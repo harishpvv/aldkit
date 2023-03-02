@@ -1,0 +1,108 @@
+# SYSTEM
+path_restart = restart
+path_save = save
+path_output = output
+calculation = phph
+symprecision = 6
+precision = 10
+temperature = 300
+ntime = 1.0e-12
+nlength = 1.0e-10
+nmass = 1.66054e-27
+nproc_calculator = 10
+
+# STRUCTURE
+alat
+3.83959 0.0 0.0
+1.9197950000000004 3.3251824801166925 0.0
+1.9197950000000004 1.1083941600388978 3.135012107164287
+
+coordinates = direct
+natoms = 2
+Si  0.0 0.0 0.0 28.085
+Si  0.25 0.25 0.25 28.085
+
+species
+Si  27.977 0.92223 28.976 0.04685 29.974 0.03092  
+
+
+# FORCE_CONSTANTS
+ftype = finite-difference
+iprim = yes
+ddisp = 0.025
+ndisp = 200
+cutfrc
+Si  Si  6 6 0
+
+potential = empirical
+cell4 = 4 4 4
+cell3 = 4 4 4
+cell2 = 6 6 6
+
+# HARMONIC_PROPERTIES
+fermi_invariance = yes
+renormalize = no
+helmholtz_quartic = no
+helmholtz_cubic = yes
+igruneissen = yes
+
+# BAND STRUCTURE (GXGL)
+idirdisp = yes
+dirtype = direct
+ndirdisp = 3
+0.0 0.0 0.0 0.5  0.0  0.5  100 
+0.5 0.0 0.5 0.0  0.0  0.0  100 
+0.0 0.0 0.0 0.5  0.5  0.5  100 
+
+
+# SCATTERINGS
+normal_umklapp = both
+ifourphonon = no
+isoscat = no
+ibdry = no
+lbdry = 1e+9
+ielph = no
+fkcell = 1 1 1
+ckcell = 1 1 1
+cqcell = 1 1 1
+
+# SOLVER
+fsolve = taylor-series
+fulldisp = pre
+iterate_bte = no
+coherent_bte = no
+cutfermi
+Si  Si  6 6 0
+
+udisp = 200
+fqcell = 20 20 20
+occupation = quantum
+isensitivity3 = no
+iscattering_phase_space_only = no
+start_q = 0
+end_q = -1
+fourphonon_maxfreq = 50
+itime_reversal_symmetry = yes
+broadening_function = gaussian
+split_fit = no
+equilibrium_force_fit = yes
+maxeqn = 10000
+itrans = yes
+
+# NUMERICAL_PARAMETERS
+scale_force_fit = 100
+deltaq = 0.00001
+epsil_anharmonic_renormalize = 0.01
+epsil_renormalize = 0.01
+betamix_renormalization = 0.5
+energy_delta_cutoff3 = 3
+energy_delta_cutoff4 = 2
+energy_delta_scale3 = 0.1
+energy_delta_scale4 = 0.1
+fc_threshold3 = 0.0001
+fc_threshold4 = 0.01
+energy_delta_cutoff_isotope = 4
+energy_delta_scale_isotope = 0.1
+epsil_iter_bte = 1.0
+betamix_iter_bte = 0.5
+    

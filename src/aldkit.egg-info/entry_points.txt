@@ -1,0 +1,5 @@
+[console_scripts]
+ald_help = aldkit.ald_help:main
+ald_input = aldkit.ald_input:main
+ald_pbs = aldkit.ald_pbs:main
+

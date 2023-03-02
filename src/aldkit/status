@@ -1,0 +1,8 @@
+added "mode_accumulations function" on 23/06/2022
+tools.get_mp_atoms added on 23/06/22
+tools.get_neighbors added on 10/07/22
+ald.ALD.get_neighbors_list added on 10/07/22
+bandpath is added to ald_input on 02/03/2023
+*.py files are edited on 02/03/2023
+/n**2 is added to sps3 on 02/03/2023
+added ald_help on 02/03/2023
