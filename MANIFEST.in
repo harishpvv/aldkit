@@ -1,5 +1,0 @@
-recursive-include ./src/aldkit/pseudos/PBE_ONCV/ *.UPF
-recursive-include ./src/aldkit/pseudos/PBESOL_ONCV/ *.UPF
-recursive-include ./src/aldkit/pseudos/LDA_ONCV/ *.UPF
-recursive-include ./src/aldkit/aldcodes *.py
-recursive-include ./src/aldkit/aldcodes *.pickle
