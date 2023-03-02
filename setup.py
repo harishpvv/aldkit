@@ -6,7 +6,7 @@ with open("README.md", 'r') as f:
   
 setup(
         name ='aldkit',
-        version ='1.1.9',
+        version ='1.1.10',
         author ='Harish PVV',
         author_email ='harishpvv@gmail.com',
         description ="Parser for anharmonic lattice dynamics package developed by Prof. Ankit Jain.",

@@ -169,8 +169,8 @@ def generate_batch_file(prefix, path, args):
     f.write("#!/bin/bash\n")
     for module in modules:
       f.write("module load %s\n" % (module))
-    f.write("export OMP_NUM_THREADS=%d\n" % (OMP_NUM_THREADS))    f.write("\n")
-
+    f.write("export OMP_NUM_THREADS=%d\n" % (OMP_NUM_THREADS))   
+    f.write("\n")
     f.write("\n/usr/bin/rm -rf " + outdir + "/%s\n" % (prefix))
     f.write("mkdir -p " + outdir + "/%s\n" % (prefix))
     f.write(f"\n{parallel} -n {args.ppn} pw.x -in {args.calc}.in | tee {args.calc}.out\n")
